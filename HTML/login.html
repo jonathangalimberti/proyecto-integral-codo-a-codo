@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/login.css">
+
+    <title>Funco Shop</title>
+  </head>
+  <body>
+    <header class="container-header">
+      <section class="header">
+        <picture class="imagen-logo">
+          <img
+            src="../img/branding/logo_light_horizontal.svg"
+            alt="Logo Funko Shop"
+            srcset=""
+            class="logo-header"
+          />
+        </picture>
+        <nav class="nav">
+          <p class="salir">SALIR</p>
+        </nav>
+      </section>
+    </header>
+    <main>
+        <section class="formulario-login">
+            <div>
+                <h1 class="titulo">INGRESAR A MI CUENTA</h1>
+            </div>
+            <form action="">
+                <div class="input-texto">
+                    <label for="email" class="email">Email:</label>
+                    <input type="email" name="" id="email" required placeholder="ejemplo@ejemplo.com" class="input-email">
+                </div>
+                <div class="input-texto">
+                    <label for="contraseña" class="contraseña" >Contraseña:</label>
+                    <input type="password" name="" id="contraseña" required placeholder="**********" class="input-contraseña">
+                </div>
+                <div class="contenedor-ingresar">
+                    <input type="button" value="Ingresar" class="boton-ingresar">
+                    <div class="contenedor-recordarme">
+                        <input
+                          type="radio"
+                          name="filtrar"
+                          id="recordarme"
+                          class="radio-filtro"
+                        />
+                        <label for="recordarme" class="seleccion-filtro"></label
+                        ><span id="recordarme" class="recordarme">Recordarme</span><br />
+                      </div>
+                </div>
+                <div class="recupero-contraseña">
+                    <p class="olvide-contraseña">Olvidé mi contraseña</p>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer class="footer">
+      <section class="container-footer">
+        <div class="links-footer">
+          <p>SHOP</p>
+          <p>REGISTRARSE</p>
+          <p>INGRESAR</p>
+          <p>CONTACTO</p>
+        </div>
+        <picture class="logo-footer">
+          <img
+            src="../img/branding/isotype.svg"
+            alt="logo Funko Pop sin letras"
+            srcset=""
+            class="logo-sin-texto"
+          />
+        </picture>
+      </section>
+      <section class="derechos-footer">
+        <p>All rights reserved 2022 - Funkoshop & copy;</p>
+      </section>
+    </footer>
+  </body>
+</html>

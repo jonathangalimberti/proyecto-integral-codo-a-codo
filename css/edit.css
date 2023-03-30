@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* variables de color*/
+  --bg-header-footer: #30343f;
+
+  --background-color-black: #1f1f1f;
+  --background-color-black90: rgb(31, 31, 31, 90%);
+  --background-color-black50: rgb(31, 31, 31, 50%);
+  --background-color-black10: rgb(31, 31, 31, 10%);
+
+  --background-color-ligth: #fafaff;
+  --background-color-ligth90: rgb(250, 250, 255, 90%);
+  --background-color-ligth50: rgb(250, 250, 255, 50%);
+  --background-color-ligth10: rgb(250, 250, 255, 10%);
+
+  /* espaciados */
+
+  --spacing128: 128;
+  --spacing68: 68;
+  --spacing36: 36;
+  --spacing28: 28;
+  --spacing16: 16;
+  --spacing12: 12;
+  --spacing8: 8;
+
+  /* fuentes */
+
+  --font-Raleway-general: "Raleway", sans-serif;
+  --font-Inter-details: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Header */
+.container-header {
+  width: 100%;
+  display: flex;
+  background-color: var(--bg-header-footer);
+  height: 14.4rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-header {
+  margin-left: 11rem;
+}
+
+.imagen-logo {
+  width: 50%;
+}
+
+.nav {
+  color: #ffffff;
+  font-family: var(--font-Raleway-general);
+  font-size: 2rem;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.salir {
+  padding-right: 10.7rem;
+}
+
+/* main */
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  margin: 3.6rem 44.5rem 3.6rem 11.5rem;
+}
+
+.titulo {
+  font-family: var(--font-Raleway-general);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 4.9rem;
+  letter-spacing: 0.04em;
+  color: #1f1f1f;
+}
+
+.etiquetas {
+  font-family: var(--font-Inter-details);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  margin: 3.6rem 0;
+}
+
+.area-de-texto {
+  width: 100%;
+  height: 19.4rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  color: #1F1F1F;
+  padding: 1.3rem;
+  margin-bottom: 3.6rem;
+}
+
+.textos {
+  font-family: var(--font-Inter-details);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: right;
+  letter-spacing: 0.04em;
+}
+
+.input-seleccion {
+  font-family: var(--font-Inter-details);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #1F1F1F;
+  display: inline;
+  width: 24.3rem;
+  height: 4.42rem;
+  border: 2px solid #30343f;
+  border-radius: 6px;
+  padding-left: 1rem;
+}
+
+.input-texto {
+  font-family: var(--font-Inter-details);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  border: none;
+  border-bottom: 0.2rem solid #ff3333;
+  display: inline;
+  width: 29.5rem;
+}
+
+.contenedor-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.seleccionables {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3.9rem;
+  justify-content: stretch;
+  gap: 5.3rem;
+  align-items: stretch;
+}
+
+.container-precios {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5.6rem;
+}
+
+.input-texto-precios {
+  width: 13rem;
+  text-align: start;
+}
+
+.input-texto-stock, .input-texto-descuento {
+  width: 4.5rem;
+  text-align: center;
+}
+
+
+
+.container-descuento {
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+  justify-content: flex-start;
+}
+
+.imagenes {
+  margin-bottom: 3.76rem;
+}
+
+.input-seleccion-cuotas {
+  font-family: var(--font-Inter-details);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #1F1F1F;
+  display: inline;
+  padding-left: 1.5rem;
+  margin-left: 1rem;
+  border: 2px solid #30343f;
+  border-radius: 6px;
+  height: 4.4rem;
+  width: 34.6rem;
+}
+
+.span-imagenes {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  
+  color: #1f1f1f;
+}
+
+.container-imagenes-cargadas{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 32.5rem;
+    margin-bottom: 3.6rem;
+    align-items: center;
+}
+
+
+.input-imagen {
+  background: rgba(217, 217, 217, 0.63);
+  border: 1px solid rgba(48, 52, 63, 0.7);
+  border-radius: 0.3rem;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #1f1f1f;
+  width: 12.5rem;
+  height: 2.5rem;
+  margin-left: 0.8rem;
+  margin-right: 0.45rem;
+}
+
+.frente, .dorso{
+font-family:var(--font-Raleway-general);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+color: #000000;
+text-align: center;
+}
+
+.botones {
+  background-color: #ff3333;
+  font-family: var(--font-Inter-details);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #ffffff;
+  margin-right: 3.4rem;
+  border: none;
+  width: 17.5rem;
+  height: 4.43rem;
+}
+
+.imagenes-cargadas{
+  width: 15rem;
+  border-bottom: 1px solid #FF3333;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-header-footer);
+  height: 34.3rem;
+}
+
+.container-footer {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-footer {
+  font-family: var(--font-Raleway-general);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  padding-left: 11rem;
+  color: #ffffff;
+}
+
+.links-footer p {
+  padding-top: 1rem;
+}
+
+.logo-footer {
+  display: contents;
+  width: 50%;
+  align-items: end;
+}
+
+.logo-sin-texto {
+  margin-right: 11rem;
+}
+
+.derechos-footer {
+  font-family: var(--font-Raleway-general);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #ffffff;
+  text-align: center;
+}

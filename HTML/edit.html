@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/edit.css" />
+
+    <title>Funco Shop</title>
+  </head>
+  <body>
+    <header class="container-header">
+      <section class="header">
+        <picture class="imagen-logo">
+          <img
+            src="../img/branding/logo_light_horizontal.svg"
+            alt="Logo Funko Shop"
+            srcset=""
+            class="logo-header"
+          />
+        </picture>
+        <nav class="nav">
+          <p class="salir">SALIR</p>
+        </nav>
+      </section>
+    </header>
+    <main class="container-main">
+      <form action="" class="contenedor-formulario">
+        <h1 class="titulo">EDITAR ITEM</h1>
+        <div class="seleccionables">
+          <div class="seleccionable1">
+            <label for="categoria" class="textos"
+              >Categoría:
+              <input
+                list="categorias"
+                name="categoria"
+                id="categoria"
+                value="Figuras de acción"
+                class="input-seleccion"
+              />
+              <datalist id="categorias">
+                <option name="figuras-de-accion">Figuras de acción</option>
+              </datalist>
+            </label>
+          </div>
+          <div class="seleccionable2">
+            <label for="licencia" class="textos"
+              >Licencia:
+              <input
+                list="licencias"
+                name="licencia"
+                id="licencia"
+                value="Star wars"
+                class="input-seleccion"
+              />
+              <datalist id="licencias">
+                <option name="Pokemon">Pokemón</option>
+                <option name="Star Wars">Star Wars</option>
+                <option name="Harry Potter">Harry Potter</option>
+              </datalist>
+            </label>
+          </div>
+        </div>
+        <div class="nombre-producto">
+          <h2 class="sub-titulo etiquetas">
+            Nombre del producto:
+            <input
+              type="text"
+              class="input-texto"
+              value="Kakashi Hatake Shippuden Saga"
+            />
+          </h2>
+        </div>
+        <div class="container-area-texto">
+          <textarea
+            name="Descripción-producto"
+            id=""
+            cols="100"
+            rows="15"
+            placeholder="Descripción del producto"
+            class="area-de-texto"
+          >Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
+        </div>
+        <div class="container-precios">
+          <label for="sku" class="etiquetas"
+            >SKU:
+            <input
+              type="text"
+              name=""
+              id="sku"
+              value="NAR001012"
+              class="input-texto input-texto-precios"
+          /></label>
+          <label for="precio" class="etiquetas"
+            >Precio:
+            <input
+              type="text"
+              name=""
+              id="precio"
+              value="$ 1.799,00"
+              class="input-texto input-texto-precios"
+          /></label>
+          <label for="stock" class="etiquetas"
+            >Stock:
+            <input
+              type="text"
+              name=""
+              id="stock"
+              value="10"
+              class="input-texto input-texto-stock"
+          /></label>
+        </div>
+        <div class="container-descuento">
+          <label for="descuento" class="etiquetas"
+            >Descuento:
+            <input
+              type="text"
+              name=""
+              id="descuento"
+              value="10%"
+              class="input-texto-descuento input-texto"
+          /></label>
+          <label for="cuotas" class="etiquetas"
+            >Cuotas:<input
+              list="cuota"
+              name=""
+              id="cuotas"
+              value="6 Cuotas sin interés"
+              class="input-seleccion-cuotas"
+            />
+            <datalist id="cuota">
+              <option value="3 Cuotas sin interés">3 Cuotas sin interés</option>
+              <option value="6 Cuotas sin interés">6 Cuotas sin interés</option>
+              <option value="12 Cuotas sin interés">12 Cuotas sin interés</option>
+            </datalist></label>
+        </div>
+        <div class="imagenes">
+          <label for="imagen" class="etiquetas"
+            >Imágenes:<input
+              id="imagen"
+              type="button"
+              value="Elegir archivos"
+              class="input-imagen"
+            /><span class="span-imagenes"
+              >No se ha seleccionado ningún archivo
+            </span></label
+          >
+        </div>
+        <div class="container-imagenes-cargadas">
+          <div class="imagen-frente">
+            <img src="../img/star-wars/trooper-1.webp" alt="imagen frente Funko" class="imagenes-cargadas">
+            <p class="frente">FRENTE</p>
+          </div>
+          <div class="imagen-dorso">
+            <img src="../img/star-wars/trooper-box.webp" alt="imagen dorso Funko" class="imagenes-cargadas">
+            <p class="dorso">DORSO</p>
+          </div>
+        </div>
+        <div class="botones-formulario">
+          <input type="button" value="Modificar Producto" class="botones" />
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <section class="container-footer">
+        <div class="links-footer">
+          <p>SHOP</p>
+          <p>REGISTRARSE</p>
+          <p>INGRESAR</p>
+          <p>CONTACTO</p>
+        </div>
+        <picture class="logo-footer">
+          <img
+            src="../img/branding/isotype.svg"
+            alt="logo Funko Pop sin letras"
+            srcset=""
+            class="logo-sin-texto"
+          />
+        </picture>
+      </section>
+      <section class="derechos-footer">
+        <p>All rights reserved 2022 - Funkoshop & copy;</p>
+      </section>
+    </footer>
+  </body>
+</html>
