@@ -31,24 +31,26 @@ body{
 }
 
 .navbar{
-    /* background-color: #30343F; */
+    background-color: #30343F;
     z-index: 1;
 }
 
 .banner{
     background-color: #30343F!important;
-    height: 38rem;
-    overflow: hidden;
 }
 
 .card-banner{
     top:30%
 }
 .img-banner{
-    width: 100%;
+    object-fit:cover ;
     height: 38rem;
-    filter: blur(4px);
+    filter: blur(3px);
     overflow: hidden;
+}
+
+.card-width{
+    max-width: 935px;
 }
 
 .btn-colection{
