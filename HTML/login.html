@@ -6,84 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/index-bootstrap.css">
+    <!-- <link rel="stylesheet" href="../css/login.css"> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/login.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <title>Funco Shop</title>
   </head>
   <body>
-    <header class="container-header">
-      <section class="header">
-        <picture class="imagen-logo">
-          <img
-            src="../img/branding/logo_light_horizontal.svg"
-            alt="Logo Funko Shop"
-            srcset=""
-            class="logo-header"
-          />
-        </picture>
-        <nav class="nav">
-          <p class="salir">SALIR</p>
-        </nav>
-      </section>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark w-100">
+        <div class="container-fluid p-5">
+          <a class="navbar-brand" href="../index-bootstrap.html"
+            ><img
+              src="../img/branding/logo_light_horizontal.svg"
+              alt=""
+              srcset=""
+          /></a>
+          <div
+            class="col  navbar-nav justify-content-end fs-4 font-raleway navbar-dark" >
+            <ul class="navbar-nav">
+              <li class="nav-item px-3 text-end">
+                <a class="nav-link" href="../index-bootstrap.html">SALIR</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="formulario-login">
+        <section class="container w-100 justify-content-center mt-5 w-md-75 w-lg-50">
             <div>
-                <h1 class="titulo">INGRESAR A MI CUENTA</h1>
+                <h1 class=" text-center display-1 fw-bold font-raleway mb-5">INGRESAR A MI CUENTA</h1>
             </div>
-            <form action="">
-                <div class="input-texto">
-                    <label for="email" class="email">Email:</label>
-                    <input type="email" name="" id="email" required placeholder="ejemplo@ejemplo.com" class="input-email">
-                </div>
-                <div class="input-texto">
-                    <label for="contraseña" class="contraseña" >Contraseña:</label>
-                    <input type="password" name="" id="contraseña" required placeholder="**********" class="input-contraseña">
-                </div>
-                <div class="contenedor-ingresar">
-                    <input type="button" value="Ingresar" class="boton-ingresar">
-                    <div class="contenedor-recordarme">
-                        <input
-                          type="radio"
-                          name="filtrar"
-                          id="recordarme"
-                          class="radio-filtro"
-                        />
-                        <label for="recordarme" class="seleccion-filtro"></label
-                        ><span id="recordarme" class="recordarme">Recordarme</span><br />
-                      </div>
-                </div>
-                <div class="recupero-contraseña">
-                    <p class="olvide-contraseña">Olvidé mi contraseña</p>
-                </div>
-            </form>
-
+            <form action="" class="font-inter w-100 container h3 ">
+              <div class="h3 row w-100 mb-5 align-items-center justify-content-center g-2">
+                  <label for="email" class="col-4 col-md-2">Email:</label>
+                  <input type="email" name="" id="email" required="" placeholder="ejemplo@ejemplo.com" class="h3 border-0 border-bottom border-danger align-items-end col-8 col-md-6 col-lg-4">
+              </div>
+              <div class="h3 row w-100 mb-5 align-items-center justify-content-center g-2">
+                  <label for="contraseña" class="col-4 col-md-2">Contraseña:</label>
+                  <input type="password" name="" id="contraseña" required="" placeholder="**********" class="h3 border-0 border-bottom border-danger align-items-end col-8 col-md-6 col-lg-4">
+              </div>
+              <div class="row align-items-center justify-content-center w-100 mb-5">
+                  <input type="button" value="Ingresar" class="col-4 col-md-3 col-lg-2 btn btn-danger py-4 ">
+                  <div class="col-6 col-md-3 col-lg-2 text-center px-md-3">
+                      <input type="checkbox" name="filtrar" id="recordarme" class="radio-filtro">
+                      <span id="recordarme" class="">Recordarme</span><br>
+                    </div>
+              </div>
+              <div class="row text-center mb-5">
+                  <a class="link-primary">Olvidé mi contraseña</a>
+              </div>
+          </form>
         </section>
     </main>
-    <footer class="footer">
-      <section class="container-footer">
-        <div class="links-footer">
-          <p>SHOP</p>
-          <p>REGISTRARSE</p>
-          <p>INGRESAR</p>
-          <p>CONTACTO</p>
+    <footer class="footer py-3">
+      <section class="container text-white pt-5 pb-1 mt-5 font-raleway">
+        <div class="row pb-3 justify-content-center">
+          <div class="links-footer col">
+            <p>SHOP</p>
+            <p>REGISTRARSE</p>
+            <p>INGRESAR</p>
+            <p>CONTACTO</p>
+          </div>
+
+          <picture
+            class="col logo-footer align-self-end p-0 m-0 h-100 w-100 position-relative"
+          >
+            <img
+              src="../img/branding/isotype.svg"
+              alt="logo Funko Pop sin letras"
+              srcset=""
+              class="position-absolute logo-footer"
+            />
+          </picture>
         </div>
-        <picture class="logo-footer">
-          <img
-            src="../img/branding/isotype.svg"
-            alt="logo Funko Pop sin letras"
-            srcset=""
-            class="logo-sin-texto"
-          />
-        </picture>
-      </section>
-      <section class="derechos-footer">
-        <p>All rights reserved 2022 - Funkoshop & copy;</p>
+        <div class="row text-white text-center mt-3">
+          <section class="derechos-footer">
+            <p>All rights reserved 2022 - Funkoshop & copy;</p>
+          </section>
+        </div>
       </section>
     </footer>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>
