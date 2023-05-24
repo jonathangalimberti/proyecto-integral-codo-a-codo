@@ -6,302 +6,395 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/index-bootstrap.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/shop.css" />
-
-    <title>Funko shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Funko Shop</title>
   </head>
   <body>
-    <header class="container-header">
-      <section class="header">
-        <picture class="imagen-logo">
-          <img
-            src="../img/branding/logo_light_horizontal.svg"
-            alt="Logo Funko Shop"
-            srcset=""
-            class="logo-header"
-          />
-        </picture>
-        <nav class="nav">
-          <p>SHOP <img src="../img/icons/Vector 1 (Stroke).png" alt="" /></p>
-          <p>CONTACTO</p>
-          <p>LOGIN</p>
-          <img src="../img/icons/cart-icon.svg" alt="" srcset="" />
-        </nav>
-      </section>
+    <header class="header link-light font-raleway">
+      <nav class="navbar navbar-expand-lg navbar-dark w-100">
+        <div class="container-fluid p-5">
+          <a class="navbar-brand" href="../index-bootstrap.html"
+            ><img
+              src="../img/branding/logo_light_horizontal.svg"
+              alt=""
+              srcset=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="height: 50px; width: 50px"
+          >
+            <span class="navbar-toggler-icon w-100"></span>
+          </button>
+          <div
+            class="col collapse navbar-collapse justify-content-end fs-4 navbar-dark"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown px-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SHOP
+                </a>
+                <ul
+                  class="dropdown-menu bg-dark w-auto px-3"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="../HTML/shop.html"
+                      >TODAS LAS CATEGORIAS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >STARWARS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >POKEMON</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >HARRY POTTER</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item px-3 link-body-emphasis">
+                <a class="nav-link link-header fw-normal link-opacity-100" aria-current="page" href="#">CONTACTO</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../HTML/login.html">LOGIN</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#"
+                  ><img src="../img/icons/cart-icon.svg" alt="" srcset=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="contenedor-main">
-      <section class="formulario-filtro">
-        <form action="" class="formulario">
-          <label for="item" class="titulo-formulario">BUSCAR</label><br />
-          <input
-            type="text"
-            name="item"
-            id="item"
-            placeholder="item o categoria"
-            class="input-texto"
-          /><br />
-          <label for="orden" class="titulo-formulario">ORDENAR POR</label><br />
-          <input
-            list="oredenar-por"
-            name="orden"
-            id="orden"
-            placeholder="menor a mayor"
-            class="input-texto"
-          />
-          <datalist id="oredenar-por">
-            <option value="mayor a menor">mayor a menor</option>
-            <option value="menor a mayor">menor a mayor</option>
-            <option value="destacado">destacado</option></datalist
-          ><br />
-          <label for="min" class="titulo-formulario">PRECIO</label><br />
-          <label for="min" class="min-max">MIN</label>
-          <input
-            type="number"
-            name="min"
-            id="min"
-            class="input-min-max"
-            placeholder="0"
-          />
-          <label for="max" class="min-max">- MAX</label>
-          <input
-            type="number"
-            name="max"
-            id="max"
-            class="input-min-max"
-            placeholder="0"
-          /><br />
-          <p class="titulo-formulario">FILTRAR</p>
-          <br />
-          <div class="contenedor-seleccion-filtro">
-            <input
-              type="radio"
-              name="filtrar"
-              id="nuevos"
-              class="radio-filtro"
-            />
-            <label for="nuevos" class="seleccion-filtro"></label
-            ><span id="nuevos" class="opciones-filtrar">NUEVOS</span><br />
-          </div>
-          <div class="contenedor-seleccion-filtro">
-            <input
-              type="radio"
-              name="filtrar"
-              id="ofertas"
-              class="radio-filtro"
-            />
 
-            <label for="ofertas" class="seleccion-filtro"></label
-            ><span id="nuevos" class="opciones-filtrar">OFERTAS</span><br />
+    <main class="container row mx-auto my-5 ">
+      <section class="col-md-3 ">
+        <form class="font-inter ">
+          <div class="mb-5">
+            <label for="exampleInputEmail1" class="form-label fs-3 fw-bold">BUSCAR</label>
+            <input type="text" class="form-control fs-3 border-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="item o categoria">
           </div>
-          <div class="contenedor-seleccion-filtro">
-            <input
-              type="radio"
-              name="filtrar"
-              id="edicion-especial"
-              class="radio-filtro"
-            />
-
-            <label for="edicion-especial" class="seleccion-filtro"></label
-            ><span id="nuevos" class="opciones-filtrar">EDICIÓN ESPECIAL</span
-            ><br />
+          <div class="mb-5 ">
+            <label for="form-select" class="form-label fs-3 fw-bold">ORDENAR POR</label>
+            <select class="form-select fs-3 border-2" aria-label="Default select example" id="form-select">
+              <option selected class="text-secondary">Mayor a menor</option>
+              <option value="1">Menor a mayor</option>
+            </select>
           </div>
-          <div class="contenedor-seleccion-filtro">
-            <input
-              type="radio"
-              name="filtrar"
-              id="favoritos"
-              class="radio-filtro"
-            />
+          <section class="row ">
+            <div class="col row mb-5 align-items-center">
+              <label for="exampleInputEmail1" class="form-label fs-3 fw-bold col">min</label>
+              <input type="number" class="form-control fs-3 border-2 col" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0">
+            </div>
+            <div class="col row  mb-5 align-items-center">
+              <label for="exampleInputEmail1" class="form-label fs-3 fw-bold col">max</label>
+              <input type="number" class="form-control fs-3 border-2 col m-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0">
+            </div>
 
-            <label for="favoritos" class="seleccion-filtro"></label
-            ><span id="nuevos" class="opciones-filtrar">FAVORITOS</span><br />
+          </section>
+          <div class="mb-3 form-check fs-4 fw-bold">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-uppercase" for="exampleCheck1">NUEVOS</label>
+          </div>
+          <div class="mb-3 form-check fs-4 fw-bold">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-uppercase" for="exampleCheck1">ofertas</label>
+          </div>
+          <div class="mb-3 form-check fs-4 fw-bold">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-uppercase" for="exampleCheck1">edición especial</label>
+          </div>
+          <div class="mb-3 form-check fs-4 fw-bold">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-uppercase" for="exampleCheck1">favoritos</label>
           </div>
         </form>
+
       </section>
-      <div class="contenido-grilla">
-        <section class="ultimos-lanzamientos">
-          <div class="contenedor-gral-aside">
-            <section class="container-aside">
-              <div class="contenedor-imagen">
-                <img
-                  src="../img/star-wars/trooper-1.webp"
-                  alt="imagen"
-                  srcset=""
-                  class="imagen-lanzamientos"
-                />
-                <p class="nuevo-item">NUEVO</p>
-              </div>
-              <p class="categoria">STAR WARS</p>
-              <h3 class="nombre-producto">STORMTROOPER LIGHTSABER</h3>
-              <p class="precio">$ 1799,99.-</p>
-              <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-            </section>
-            <section class="container-aside">
-              <div class="contenedor-imagen">
-                <img
-                  src="../img/pokemon/pidgeotto-1.webp"
-                  alt="imagen"
-                  srcset=""
-                  class="imagen-lanzamientos"
-                />
-                <p class="nuevo-item">NUEVO</p>
-              </div>
-              <p class="categoria">POKEMON</p>
-              <h3 class="nombre-producto">PIDGEOTTO</h3>
-              <p class="precio">$ 1799,99.-</p>
-              <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-            </section>
-            <section class="container-aside">
-              <div class="contenedor-imagen">
-                <img
-                  src="../img/harry-potter/luna-1.webp"
-                  alt="imagen"
-                  srcset=""
-                  class="imagen-lanzamientos"
-                />
-                <p class="nuevo-item">NUEVO</p>
-              </div>
-              <p class="categoria">HARRY POTTER</p>
-              <h3 class="nombre-producto">LUNA LOVEGOOD LION MASK</h3>
-              <p class="precio">$ 1799,99.-</p>
-              <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-            </section>
+      <section class="col-md-9">
+        <div class="card-group  font-inter ">
+          <div class="card m-2 border-0 position-relative">
+            <img
+              src="../img/star-wars/trooper-1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+            >
+              NUEVO
+            </p>
+            <div class="card-body">
+              <p class="card-text fs-6 text-secondary">STAR WARS</p>
+              <h5 class="card-title fs-5 fw-bold">STORMTROOPER LIGHTSABER</h5>
+              <p class="card-text fs-6 text-secondary">
+                <small class="text-muted">$ 1799,99.-</small>
+              </p>
+              <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+            </div>
           </div>
-        </section>
-        <section class="ultimos-lanzamientos">
-          <div class="contenedor-gral-aside">
-            <section class="container-aside">
-              <div class="contenedor-imagen">
-                <img
-                  src="../img/star-wars/trooper-1.webp"
-                  alt="imagen"
-                  srcset=""
-                  class="imagen-lanzamientos"
-                />
-                <p class="nuevo-item">NUEVO</p>
-              </div>
-              <p class="categoria">STAR WARS</p>
-              <h3 class="nombre-producto">STORMTROOPER LIGHTSABER</h3>
-              <p class="precio">$ 1799,99.-</p>
-              <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-            </section>
-            <section class="container-aside">
-              <div class="contenedor-imagen">
-                <img
-                  src="../img/pokemon/pidgeotto-1.webp"
-                  alt="imagen"
-                  srcset=""
-                  class="imagen-lanzamientos"
-                />
-                <p class="nuevo-item">NUEVO</p>
-              </div>
-              <p class="categoria">POKEMON</p>
-              <h3 class="nombre-producto">PIDGEOTTO</h3>
-              <p class="precio">$ 1799,99.-</p>
-              <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-            </section>
-            <section class="container-aside">
-              <div class="contenedor-imagen">
-                <img
-                  src="../img/harry-potter/luna-1.webp"
-                  alt="imagen"
-                  srcset=""
-                  class="imagen-lanzamientos"
-                />
-                <p class="nuevo-item">NUEVO</p>
-              </div>
-              <p class="categoria">HARRY POTTER</p>
-              <h3 class="nombre-producto">LUNA LOVEGOOD LION MASK</h3>
-              <p class="precio">$ 1799,99.-</p>
-              <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-            </section>
+          <div class="card m-2 border-0 position-relative w-75">
+            <img
+              src="../img/pokemon/pidgeotto-1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+            >
+              NUEVO
+            </p>
+            <div class="card-body">
+              <p class="card-text fs-6 text-secondary">POKEMON</p>
+              <h5 class="card-title fs-5 fw-bold">PIDGEOTTO</h5>
+              <p class="card-text fs-6 text-secondary">
+                <small class="text-muted">$ 1799,99.-</small>
+              </p>
+              <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+            </div>
           </div>
-        </section>
-        <section class="ultimos-lanzamientos">
-          <div class="contenedor-gral-aside">
-            <section class="container-aside">
-              <div class="contenedor-imagen">
-                <img
-                  src="../img/star-wars/trooper-1.webp"
-                  alt="imagen"
-                  srcset=""
-                  class="imagen-lanzamientos"
-                />
-                <p class="nuevo-item">NUEVO</p>
-              </div>
-              <p class="categoria">STAR WARS</p>
-              <h3 class="nombre-producto">STORMTROOPER LIGHTSABER</h3>
-              <p class="precio">$ 1799,99.-</p>
-              <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-            </section>
-            <section class="container-aside">
-              <div class="contenedor-imagen">
-                <img
-                  src="../img/pokemon/pidgeotto-1.webp"
-                  alt="imagen"
-                  srcset=""
-                  class="imagen-lanzamientos"
-                />
-                <p class="nuevo-item">NUEVO</p>
-              </div>
-              <p class="categoria">POKEMON</p>
-              <h3 class="nombre-producto">PIDGEOTTO</h3>
-              <p class="precio">$ 1799,99.-</p>
-              <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-            </section>
-            <section class="container-aside">
-              <div class="contenedor-imagen">
-                <img
-                  src="../img/harry-potter/luna-1.webp"
-                  alt="imagen"
-                  srcset=""
-                  class="imagen-lanzamientos"
-                />
-                <p class="nuevo-item">NUEVO</p>
-              </div>
-              <p class="categoria">HARRY POTTER</p>
-              <h3 class="nombre-producto">LUNA LOVEGOOD LION MASK</h3>
-              <p class="precio">$ 1799,99.-</p>
-              <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-            </section>
+          <div class="card m-2 border-0 position-relative w-75">
+            <img
+              src="../img/harry-potter/luna-1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+            >
+              NUEVO
+            </p>
+            <div class="card-body">
+              <p class="card-text fs-6 text-secondary">HARRY POTTER</p>
+              <h5 class="card-title fs-5 fw-bold">LUNA LOVEGOOD LION MASK</h5>
+              <p class="card-text fs-6 text-secondary">
+                <small class="text-muted">$ 1799,99.-</small>
+              </p>
+              <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+            </div>
           </div>
-        </section>
-        <div class="botones-pagina">
-          <input type="button" value="<" class="botones" />
-          <input type="button" value="2" class="botones" />
-          <input type="button" value="3" class="botones" />
-          <input type="button" value="..." class="botones" />
-          <input type="button" value="9" class="botones" />
-          <input type="button" value="10" class="botones" />
-          <input type="button" value=">" class="botones" />
         </div>
-      </div>
+        <div class="card-group  font-inter">
+          <div class="card m-2 border-0 position-relative">
+            <img
+              src="../img/star-wars/trooper-1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+            >
+              NUEVO
+            </p>
+            <div class="card-body">
+              <p class="card-text fs-6 text-secondary">STAR WARS</p>
+              <h5 class="card-title fs-5 fw-bold">STORMTROOPER LIGHTSABER</h5>
+              <p class="card-text fs-6 text-secondary">
+                <small class="text-muted">$ 1799,99.-</small>
+              </p>
+              <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+            </div>
+          </div>
+          <div class="card m-2 border-0 position-relative w-75">
+            <img
+              src="../img/pokemon/pidgeotto-1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+            >
+              NUEVO
+            </p>
+            <div class="card-body">
+              <p class="card-text fs-6 text-secondary">POKEMON</p>
+              <h5 class="card-title fs-5 fw-bold">PIDGEOTTO</h5>
+              <p class="card-text fs-6 text-secondary">
+                <small class="text-muted">$ 1799,99.-</small>
+              </p>
+              <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+            </div>
+          </div>
+          <div class="card m-2 border-0 position-relative w-75">
+            <img
+              src="../img/harry-potter/luna-1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+            >
+              NUEVO
+            </p>
+            <div class="card-body">
+              <p class="card-text fs-6 text-secondary">HARRY POTTER</p>
+              <h5 class="card-title fs-5 fw-bold">LUNA LOVEGOOD LION MASK</h5>
+              <p class="card-text fs-6 text-secondary">
+                <small class="text-muted">$ 1799,99.-</small>
+              </p>
+              <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-group  font-inter">
+          <div class="card m-2 border-0 position-relative">
+            <img
+              src="../img/star-wars/trooper-1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+            >
+              NUEVO
+            </p>
+            <div class="card-body">
+              <p class="card-text fs-6 text-secondary">STAR WARS</p>
+              <h5 class="card-title fs-5 fw-bold">STORMTROOPER LIGHTSABER</h5>
+              <p class="card-text fs-6 text-secondary">
+                <small class="text-muted">$ 1799,99.-</small>
+              </p>
+              <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+            </div>
+          </div>
+          <div class="card m-2 border-0 position-relative w-75">
+            <img
+              src="../img/pokemon/pidgeotto-1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+            >
+              NUEVO
+            </p>
+            <div class="card-body">
+              <p class="card-text fs-6 text-secondary">POKEMON</p>
+              <h5 class="card-title fs-5 fw-bold">PIDGEOTTO</h5>
+              <p class="card-text fs-6 text-secondary">
+                <small class="text-muted">$ 1799,99.-</small>
+              </p>
+              <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+            </div>
+          </div>
+          <div class="card m-2 border-0 position-relative w-75">
+            <img
+              src="../img/harry-potter/luna-1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <p
+              class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+            >
+              NUEVO
+            </p>
+            <div class="card-body">
+              <p class="card-text fs-6 text-secondary">HARRY POTTER</p>
+              <h5 class="card-title fs-5 fw-bold">LUNA LOVEGOOD LION MASK</h5>
+              <p class="card-text fs-6 text-secondary">
+                <small class="text-muted">$ 1799,99.-</small>
+              </p>
+              <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="col-12">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination align-items-center justify-content-center  my-5 fs-3">
+            <li class="page-item mx-3 rounded-4 ">
+              <a class="page-link text-secondary" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item mx-3 rounded-4"><a class="page-link text-dark fw-bolder" href="#">1</a></li>
+            <li class="page-item mx-3 rounded-4"><a class="page-link text-dark fw-bolder" href="#">2</a></li>
+            <li class="page-item mx-3 rounded-4"><a class="page-link text-dark fw-bolder" href="#">3</a></li>
+            <li class="page-item mx-3 rounded-4">
+              <a class="page-link text-secondary" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </section>
     </main>
-    <footer class="footer">
-      <section class="container-footer">
-        <div class="links-footer">
-          <p>SHOP</p>
-          <p>REGISTRARSE</p>
-          <p>INGRESAR</p>
-          <p>CONTACTO</p>
+    <footer class="footer py-3">
+      <section class="container text-white pt-5 pb-1 mt-5 font-raleway fw-bold">
+        <div class="row pb-3 justify-content-center flex-column">
+          <div class="col-1 ">
+            <p>
+              <a href="../HTML/shop.html" class="link-light h3" >SHOP</a>
+            </p>
+            <p>
+              <a href="../HTML/register.html" class="link-light h3" >REGISTRARSE</a>
+            </p>
+            <p>
+             <a href="../HTML/login.html" class="link-light h3">INGRESAR</a>
+            </p> 
+            <p>
+             <a href="#"  class="link-light h3">CONTACTO</a>
+            </p> 
+          </div>
+
+          <picture
+            class="col logo-footer align-self-end p-0 m-0 h-100 w-100 position-relative"
+          >
+            <img
+              src="../img/branding/isotype.svg"
+              alt="logo Funko Pop sin letras"
+              srcset=""
+              class="position-absolute logo-footer"
+            />
+          </picture>
         </div>
-        <picture class="logo-footer">
-          <img
-            src="../img/branding/isotype.svg"
-            alt="logo Funko Pop sin letras"
-            srcset=""
-            class="logo-sin-texto"
-          />
-        </picture>
-      </section>
-      <section class="derechos-footer">
-        <p>All rights reserved 2022 - Funkoshop & copy;</p>
+        <div class="row text-white text-center mt-3">
+          <section class="h3">
+            <p>All rights reserved 2022 - Funkoshop & copy;</p>
+          </section>
+        </div>
       </section>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

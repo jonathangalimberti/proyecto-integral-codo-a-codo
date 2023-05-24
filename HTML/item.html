@@ -6,33 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/index-bootstrap.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/item.css" />
-
-    <title>Funco Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Funko Shop</title>
   </head>
   <body>
-    <header class="container-header">
-      <section class="header">
-        <picture class="imagen-logo">
-          <img
-            src="../img/branding/logo_light_horizontal.svg"
-            alt="Logo Funko Shop"
-            srcset=""
-            class="logo-header"
-          />
-        </picture>
-        <nav class="nav">
-          <p>SHOP <img src="../img/icons/Vector 1 (Stroke).png" alt="" /></p>
-          <p>CONTACTO</p>
-          <p>LOGIN</p>
-          <img src="../img/icons/cart-icon.svg" alt="" srcset="" />
-        </nav>
-      </section>
+    <header class="header link-light font-raleway">
+      <nav class="navbar navbar-expand-lg navbar-dark w-100">
+        <div class="container-fluid p-5">
+          <a class="navbar-brand" href="../index-bootstrap.html"
+            ><img
+              src="../img/branding/logo_light_horizontal.svg"
+              alt=""
+              srcset=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="height: 50px; width: 50px"
+          >
+            <span class="navbar-toggler-icon w-100"></span>
+          </button>
+          <div
+            class="col collapse navbar-collapse justify-content-end fs-4 navbar-dark"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown px-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SHOP
+                </a>
+                <ul
+                  class="dropdown-menu bg-dark w-auto px-3"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="../HTML/shop.html"
+                      >TODAS LAS CATEGORIAS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >STARWARS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >POKEMON</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >HARRY POTTER</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item px-3 link-body-emphasis">
+                <a class="nav-link link-header fw-normal link-opacity-100" aria-current="page" href="#">CONTACTO</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../HTML/login.html">LOGIN</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#"
+                  ><img src="../img/icons/cart-icon.svg" alt="" srcset=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+
     <main class="contenedor-main">
       <div class="container-gral-main">
         <section class="coleccion">
@@ -130,26 +197,47 @@
       </section>
     </aside>
 
-    <footer class="footer">
-      <section class="container-footer">
-        <div class="links-footer">
-          <p>SHOP</p>
-          <p>REGISTRARSE</p>
-          <p>INGRESAR</p>
-          <p>CONTACTO</p>
+     <footer class="footer py-3">
+      <section class="container text-white pt-5 pb-1 mt-5 font-raleway fw-bold">
+        <div class="row pb-3 justify-content-center flex-column">
+          <div class="col-1 ">
+            <p>
+              <a href="../HTML/shop.html" class="link-light h3" >SHOP</a>
+            </p>
+            <p>
+              <a href="../HTML/register.html" class="link-light h3" >REGISTRARSE</a>
+            </p>
+            <p>
+             <a href="../HTML/login.html" class="link-light h3">INGRESAR</a>
+            </p> 
+            <p>
+             <a href="#"  class="link-light h3">CONTACTO</a>
+            </p> 
+          </div>
+
+          <picture
+            class="col logo-footer align-self-end p-0 m-0 h-100 w-100 position-relative"
+          >
+            <img
+              src="../img/branding/isotype.svg"
+              alt="logo Funko Pop sin letras"
+              srcset=""
+              class="position-absolute logo-footer"
+            />
+          </picture>
         </div>
-        <picture class="logo-footer">
-          <img
-            src="../img/branding/isotype.svg"
-            alt="logo Funko Pop sin letras"
-            srcset=""
-            class="logo-sin-texto"
-          />
-        </picture>
-      </section>
-      <section class="derechos-footer">
-        <p>All rights reserved 2022 - Funkoshop & copy;</p>
+        <div class="row text-white text-center mt-3">
+          <section class="h3">
+            <p>All rights reserved 2022 - Funkoshop & copy;</p>
+          </section>
+        </div>
       </section>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

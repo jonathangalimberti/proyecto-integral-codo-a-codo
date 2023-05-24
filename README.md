@@ -1,4 +1,5 @@
-# proyecto-integral-codo-a-codo
+# proyecto-integral-codo-a-codo Funko Shop
+
 Creación de tienda Funko Pop completa llevando a cabo interacción con bases de datos.
 
 Paso 1- Maquetación de cada pagina diseñada en Figma de HTML y estilos con CSS - finalizado.
