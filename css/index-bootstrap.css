@@ -56,6 +56,15 @@ body{
     background-color: #30343F;
 }
 
+.btn-card{
+    width: 35px;
+    height: 35px;
+}
+
+.input-card{
+    width: 50px;
+}
+
 /* footer */
 .footer{
     background-color: #30343F;

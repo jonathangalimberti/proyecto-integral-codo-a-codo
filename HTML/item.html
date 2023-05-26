@@ -99,104 +99,117 @@
         </div>
       </nav>
     </header>
-
     <main class="contenedor-main">
-      <div class="container-gral-main">
-        <section class="coleccion">
-            <picture>
-              <img
-                src="../img/star-wars/baby-yoda-1.webp"
-                alt="imagen Funko"
-                class="imagen-funco"
-              />
-            </picture>
-          <div class="descripcion-producto-izq">
-            <h3 class="titulo">BABY YODA BLUEBALL</h3>
-            <p class="descripcion-producto descripcion-producto-izq">
-                Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.
-            </p>
-            <h3 class="precio">$ 1799,99.-</h3>
-            <div class="suma-resta">
+      <div class="card my-5 mx-auto p-auto border-0 " >
+        <div class="row g-0 " >
+          <div class="col-md-6 mb-5">
+            <img src="../img/star-wars/baby-yoda-1.webp" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6 col-12 my-auto">
+            <div class="card-body">
+              <p class="card-textfs-3 text-secondary mb-3 ">STARWARS</p>
+              <h5 class="card-title h1 fw-bold">BABY YODA BLUEBALL</h5>
+              <p class="card-text fs-2">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+              <p class="card-text"><span class="text-body-secondary h3 fs-2 mb-3">$ 1799,99.-</span></p>
+              <div class="my-5">
                 <input
                   type="button"
                   value="-"
-                  class="boton-ver-coleccion"
+                  class="btn btn-secondary btn-card fs-4"
                 />
                 <input
                   type="number"
                   value="0"
-                  class="ingreso-numero"
+                  class="p-1 mx-2 btn-card fs-4 align-bottom"
                 />
                 <input
                   type="button"
                   value="+"
-                  class="boton-ver-coleccion"
+                  class="btn btn-secondary btn-card fs-4"
                 />
                 <input
                   type="button"
                   value="Agregar al carrito"
-                  class="agregar"
+                  class="btn btn-danger p-2 rounded-0 mx-2 fs-4"
                 />
             </div>
-            <p class="formas-de-pago"><a href="" class="formas-de-pago">Ver métodos de pago </a>- 3 CUOTAS SIN INTERÉS</p>
+            <p class="fs-5"><a href="" class="link"> <span class="text-decoration-underline"> Ver métodos de pago</span>  - 3 CUOTAS SIN INTERÉS</p></a>
+            </div>
+          </div>
         </div>
-        </section>
       </div>
     </main>
-
-    <aside class="contenedor-aside">
-      <section class="ultimos-lanzamientos">
-        <h2 class="titulo-lanzamientos">PRODUCTOS RELACIONADOS</h2>
-        <div class="contenedor-gral-aside">
-          <section class="container-aside">
-            <div class="contenedor-imagen">
-              <img
-                src="../img/star-wars/trooper-1.webp"
-                alt="imagen"
-                srcset=""
-                class="imagen-lanzamientos"
-              />
-              <p class="nuevo-item">NUEVO</p>
-            </div>
-            <p class="categoria">STAR WARS</p>
-            <h3 class="nombre-producto">STORMTROOPER LIGHTSABER</h3>
-            <p class="precio">$ 1799,99.-</p>
-            <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-          </section>
-          <section class="container-aside">
-            <div class="contenedor-imagen">
-              <img
-                src="../img/pokemon/pidgeotto-1.webp"
-                alt="imagen"
-                srcset=""
-                class="imagen-lanzamientos"
-              />
-              <p class="nuevo-item">NUEVO</p>
-            </div>
-            <p class="categoria">POKEMON</p>
-            <h3 class="nombre-producto">PIDGEOTTO</h3>
-            <p class="precio">$ 1799,99.-</p>
-            <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-          </section>
-          <section class="container-aside">
-            <div class="contenedor-imagen">
-              <img
-                src="../img/harry-potter/luna-1.webp"
-                alt="imagen"
-                srcset=""
-                class="imagen-lanzamientos"
-              />
-              <p class="nuevo-item">NUEVO</p>
-            </div>
-            <p class="categoria">HARRY POTTER</p>
-            <h3 class="nombre-producto">LUNA LOVEGOOD LION MASK</h3>
-            <p class="precio">$ 1799,99.-</p>
-            <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
-          </section>
+    <aside
+    class="container justify-content-center d-flex flex-column g-2 mb-5 pb-5"
+  >
+    <div class="">
+      <h1 class="fs-1 font-raleway text-uppercase fw-bold my-5 text-start">
+        productos relacionados
+      </h1>
+    </div>
+    <div class="card-group m-3 font-inter">
+      <div class="card m-2 border-0 position-relative">
+        <img
+          src="../img/star-wars/trooper-1.webp"
+          class="card-img-top"
+          alt="..."
+        />
+        <p
+          class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+        >
+          NUEVO
+        </p>
+        <div class="card-body">
+          <p class="card-text fs-6 text-secondary">STAR WARS</p>
+          <h5 class="card-title fs-5 fw-bold">STORMTROOPER LIGHTSABER</h5>
+          <p class="card-text fs-6 text-secondary">
+            <small class="text-muted">$ 1799,99.-</small>
+          </p>
+          <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
         </div>
-      </section>
-    </aside>
-
+      </div>
+      <div class="card m-2 border-0 position-relative w-75">
+        <img
+          src="../img/pokemon/pidgeotto-1.webp"
+          class="card-img-top"
+          alt="..."
+        />
+        <p
+          class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+        >
+          NUEVO
+        </p>
+        <div class="card-body">
+          <p class="card-text fs-6 text-secondary">POKEMON</p>
+          <h5 class="card-title fs-5 fw-bold">PIDGEOTTO</h5>
+          <p class="card-text fs-6 text-secondary">
+            <small class="text-muted">$ 1799,99.-</small>
+          </p>
+          <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+        </div>
+      </div>
+      <div class="card m-2 border-0 position-relative w-75">
+        <img
+          src="../img/harry-potter/luna-1.webp"
+          class="card-img-top"
+          alt="..."
+        />
+        <p
+          class="nuevo-item position-absolute top-0 end-0 border border-danger px-3 py-1 bg-danger text-white"
+        >
+          NUEVO
+        </p>
+        <div class="card-body">
+          <p class="card-text fs-6 text-secondary">HARRY POTTER</p>
+          <h5 class="card-title fs-5 fw-bold">LUNA LOVEGOOD LION MASK</h5>
+          <p class="card-text fs-6 text-secondary">
+            <small class="text-muted">$ 1799,99.-</small>
+          </p>
+          <a href="" class="card-text fs-5">3 CUOTAS SIN INTERÉS</a>
+        </div>
+      </div>
+    </div>
+  </aside>
      <footer class="footer py-3">
       <section class="container text-white pt-5 pb-1 mt-5 font-raleway fw-bold">
         <div class="row pb-3 justify-content-center flex-column">
