@@ -65,6 +65,11 @@ body{
     width: 50px;
 }
 
+.button-carousel{
+    color: #30343F;
+    background-color: #30343F;
+}
+
 /* footer */
 .footer{
     background-color: #30343F;
