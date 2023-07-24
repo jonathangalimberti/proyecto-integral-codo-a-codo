@@ -5,7 +5,8 @@ let buttonMinus = document.getElementById("button-minus")
 buttonMinus.addEventListener("click",rest)
 let inputItem = document.getElementById("input-item")
 
-let conteo = 0;
+let conteo = inputItem.value;
+console.log(conteo)
 
 function add(){
     conteo++;
@@ -20,5 +21,5 @@ function rest(){
 }
 
 function printInput(conteo){
-   return inputItem.innerHTML = conteo
+   return inputItem.value = conteo
 }
